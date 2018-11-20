@@ -24,8 +24,6 @@ github_username:    azrrrrr
 facebook_username:  Amor_dr7
 jianshu_username:   93d333ac3afd
 twitter_username:   Amor_dr7
-segmentfault_username：  rui7
-
 
 
 
@@ -98,19 +96,40 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "segmentfault",
-        href: "https://segmentfault.com/u/rui7"
-    },{
-        title: "sumorfly",
-        href: "http://sumorfly.github.io"
-    },
-    {
         title: "张鑫旭",
         href: "https://www.zhangxinxu.com/"
     },
     {
         title: "阮一峰",
         href: "http://www.ruanyifeng.com/blog/"
+    },
+    {
+        title: "朴灵",
+        href: "http://html5ify.com/"
+    },
+    {
+        title: "廖雪峰",
+        href: "https://www.liaoxuefeng.com/"
+    },
+    {
+        title: "颜海镜",
+        href: "https://yanhaijing.com/"
+    },
+    {
+        title: "大漠穷秋",
+        href: "http://www.ngfans.net/"
+    },
+    {
+        title: "小翼",
+        href: "https://www.my-fe.pub/"
+    },
+    {
+        title: "前端大爆炸",
+        href: "https://alili.tech/"
+    },
+    {
+        title: "sumorfly",
+        href: "http://sumorfly.github.io"
     },
 ]
 
