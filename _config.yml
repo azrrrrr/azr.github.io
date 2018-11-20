@@ -24,6 +24,7 @@ github_username:    azrrrrr
 facebook_username:  Amor_dr7
 jianshu_username:   93d333ac3afd
 twitter_username:   Amor_dr7
+segmentfault_username：  rui7
 
 
 
@@ -102,7 +103,15 @@ friends: [
     },{
         title: "sumorfly",
         href: "http://sumorfly.github.io"
-    }
+    },
+    {
+        title: "张鑫旭",
+        href: "https://www.zhangxinxu.com/"
+    },
+    {
+        title: "阮一峰",
+        href: "http://www.ruanyifeng.com/blog/"
+    },
 ]
 
 
