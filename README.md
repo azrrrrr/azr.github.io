@@ -1,2 +1,2 @@
 # azrrrrr.github.io
-BY Blog ->
+BY Blog -> amor9.cn
