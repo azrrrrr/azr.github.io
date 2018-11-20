@@ -9,13 +9,13 @@
 
 ```
 # Site settings
-title: BY Blog                    # 你的博客网站标题
-SEOTitle: 柏荧的博客 | BY Blog		# SEO 标题
-description: "Hey"	   	   # 随便说点，描述一下
+title: Azrrrrr               # 你的博客网站标题
+SEOTitle: Azr的博客 | BY Blog		 # SEO 标题
+description: "Hey"	   	       # 随便说点，描述一下
 
 # SNS settings      
-github_username: qiubaiying     # 你的github账号
-jianshu_username: e71990ada2fd  # 你的简书ID。
+github_username: azrrrrr     # 你的github账号
+jianshu_username: 93d333ac3afd   # 你的简书ID。
 
 # Build settings
 # paginate: 10              # 一页你准备放几篇文章
@@ -36,11 +36,11 @@ layout:     post
 title:      定时器 你真的会使用吗？
 subtitle:   iOS定时器详解
 date:       2016-12-13
-author:     BY
+author:     Azrrrrr
 header-img: img/post-bg-ios9-web.jpg
 catalog: 	 true
 tags:
-    - iOS
+    - JS
     - 定时器
 ---
 
@@ -91,8 +91,8 @@ featured-condition-size: 1     # A tag will be featured if the size of it is mor
 # Friends
 friends: [
     {
-        title: "BY Blog",
-        href: "https://qiubaiying.github.io/"
+        title: "Azr",
+        href: "https://azrrrrr.github.io/"
     },
     {
         title: "Apple",
