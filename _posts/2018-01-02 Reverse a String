@@ -1,0 +1,50 @@
+---
+layout:     post
+title:      Reverse a String 
+subtitle:   FCC Basic Algorithm Scripting 1 
+date:       2018-01-22
+author:     BY
+header-img: img/post-bg-debug.png
+catalog: true
+tags:
+    - FCC
+    - 算法
+    - 初级
+---
+
+> 翻转字符串
+
+先把字符串转化成数组，再借助数组的reverse方法翻转数组顺序，最后把数组转化成字符串。
+
+你的结果必须得是一个字符串
+
+当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。
+
+这是一些对你有帮助的资源:
+
+Global String Object
+String.split()
+Array.reverse()
+Array.join()
+
+/**
+  * Your output will go here.
+  * Any console.log() -type
+  * statements will appear in
+  * your browser's DevTools
+  * JavaScript console.
+  */
+
+reverseString("hello") 应该返回一个字符串
+reverseString("hello") 应该返回 "olleh".
+reverseString("Howdy") 应该返回 "ydwoH".
+reverseString("Greetings from Earth") 应该返回 "htraE morf sgniteerG".
+
+
+```function reverseString(str) {
+  // 请把你的代码写在这里
+  return str;
+}
+
+reverseString("hello");
+```
