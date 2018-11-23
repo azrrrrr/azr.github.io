@@ -163,6 +163,6 @@ function factorialize(num) {
 
 本文首次发布于 [Azr的博客](http://amor9.cn), 作者 [@azrrrrr](https://github.com/azrrrrr/) ,转载请保留原文链接.
 
-原文链接：[http://amor9.cn/2018/01/02/challenges-factorialize-a-number/](http://amor9.cn/2018/01/02/challenges-factorialize-a-number/)
+原文链接：[http://amor9.cn/2018/01/03/challenges-factorialize-a-number/](http://amor9.cn/2018/01/03/challenges-factorialize-a-number/)
 
 
