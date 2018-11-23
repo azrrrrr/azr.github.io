@@ -21,7 +21,7 @@ tags:
 - [英语Link](https://www.freecodecamp.com/challenges/factorialize-a-number)
 - 级别： Basic Algorithm Scripting
 
-## 计算一个整数的阶乘
+## Factorialize a Number
 
 如果用字母n来代表一个整数，阶乘代表着所有小于或等于n的整数的乘积。
 
