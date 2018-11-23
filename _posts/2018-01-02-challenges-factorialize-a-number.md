@@ -159,3 +159,10 @@ function factorialize(num) {
 1. 初始判断条件：如果设置为 `if (num === 1)` 是不行的，这样传入 0 的时候就不能得到 1 
 2. 注意：传入的数字比较大，会发生`stack overflow`，可以使用[尾调用优化](http://www.ruanyifeng.com/blog/2015/04/tail-call.html)
 
+## 完
+
+本文首次发布于 [Azr的博客](http://amor9.cn), 作者 [@azrrrrr](https://github.com/azrrrrr/) ,转载请保留原文链接.
+
+原文链接：[http://amor9.cn/2018/01/02/challenges-factorialize-a-number/](http://amor9.cn/2018/01/02/challenges-factorialize-a-number/)
+
+
