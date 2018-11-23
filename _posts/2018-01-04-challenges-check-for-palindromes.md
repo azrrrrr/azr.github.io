@@ -18,7 +18,6 @@ tags:
 ## 题目Link
 
 - [中文Link](https://freecodecamp.cn/challenges/check-for-palindromes)
-- [英语Link](https://www.freecodecamp.com/challenges/check-for-palindromes)
 - 级别： Basic Algorithm Scripting
 
 ## Check for Palindromes
@@ -99,7 +98,7 @@ palindrome("eye");
    * 边界条件
    * 跳出条件
 
-1. 代码
+> 代码
 
 ```
 function palindrome (str) {
