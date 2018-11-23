@@ -96,12 +96,12 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "张鑫旭",
-        href: "https://www.zhangxinxu.com/"
-    },
-    {
         title: "阮一峰",
         href: "http://www.ruanyifeng.com/blog/"
+    },
+    {
+        title: "张鑫旭",
+        href: "https://www.zhangxinxu.com/"
     },
     {
         title: "朴灵",
@@ -114,6 +114,10 @@ friends: [
     {
         title: "颜海镜",
         href: "https://yanhaijing.com/"
+    },
+    {
+        title: "AmorR",
+        href: "https://www.cnblogs.com/AmorR/"
     },
     {
         title: "大漠穷秋",
