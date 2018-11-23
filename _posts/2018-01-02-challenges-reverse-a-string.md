@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      FreeCodeCamp 初级算法题 - 翻转字符串
+title:      FreeCodeCamp 初级算法题 - 翻转字符串 
 subtitle:   01.Basic Algorithm Scripting - Reverse a String
 date:      2018-01-02
 author:     Azr
@@ -159,4 +159,4 @@ function reverseString(str) {
 
 本文首次发布于 [Azr的博客](http://amor9.cn), 作者 [@azrrrrr](https://github.com/azrrrrr/) ,转载请保留原文链接.
 
-原文链接： http://amor9.cn/2018/01/02/FCC%E5%88%9D%E7%BA%A7-01-%E7%BF%BB%E8%BD%AC%E5%AD%97%E7%AC%A6/
+原文链接： http://amor9.cn/2018/01/02/challenges-reverse-a-string/
