@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/azrrrrr/azrrrrr.github.io.svg?branch=master)](https://travis-ci.com/azrrrrr/azrrrrr.github.io)
 
 ### 环境
 
