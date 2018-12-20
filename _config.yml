@@ -115,10 +115,10 @@ friends: [
         title: "颜海镜",
         href: "https://yanhaijing.com/"
     },
-    {
-        title: "AmorR",
-        href: "https://www.cnblogs.com/AmorR/"
-    },
+#     {
+#         title: "AmorR",
+#         href: "https://www.cnblogs.com/AmorR/"
+#     },
     {
         title: "大漠穷秋",
         href: "http://www.ngfans.net/"
