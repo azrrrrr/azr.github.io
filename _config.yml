@@ -97,10 +97,6 @@ service-worker: true
 # Friends
 
 friends: [
-   {
-        title: "RSS订阅",
-        href: "{{ site.url }}/feed.xml"
-    },
     {
         title: "阮一峰",
         href: "http://www.ruanyifeng.com/blog/"
