@@ -18,7 +18,7 @@ sidebar-avatar: https://ws2.sinaimg.cn/large/006tNbRwly1fxej6om0zxj30jg0jgq3o.jp
 
 
 # SNS settings
-RSS: false
+RSS: true
 weibo_username:     SunnyAmor
 zhihu_username:     azr7
 github_username:    azrrrrr
