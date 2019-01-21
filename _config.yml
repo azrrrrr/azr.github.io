@@ -152,6 +152,10 @@ friends: [
     {
         title: "极客教程",
         href: "https://www.geekjc.com/"
+    },
+    {
+        title: "小菜",
+        href: "https://github.com/xtx1130/blog"
     }
     
 ]
