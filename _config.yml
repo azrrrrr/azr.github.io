@@ -156,6 +156,10 @@ friends: [
     {
         title: "小菜",
         href: "https://github.com/xtx1130/blog"
+    },
+    {
+        title: "<IJSE BLOG />",
+        href: "https://ijser.cn/"
     }
     
 ]
