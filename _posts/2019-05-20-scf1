@@ -8,8 +8,8 @@ header-img: img/post-bg-universe.jpg
 catalog: true
 tags:
     - 十次方
----
 
+---
 
 > No
 
@@ -19,15 +19,15 @@ tags:
 
 ## 技术选型
 
-> * Node
-> * Express
-> * REST Api
-> * ES6  
-> * Promise/Async-await
-> * Axios
-> * Jquery
-> * Lodash
-> * Nunjucks
+> - Node
+> - Express
+> - REST Api
+> - ES6  
+> - Promise/Async-await
+> - Axios
+> - Jquery
+> - Lodash
+> - Nunjucks
 
 ## 接口
 
@@ -37,26 +37,26 @@ tags:
 
    > 1. 安装Mongodb--[Mac 版本](https://www.mongodb.com/download-center/community)
    >
-   >    ```
-   >    #  进入/usr/local
-   >    cd /usr/local
-   >    # 安装mongodb
-   >    sudo curl -O https://fastdl.mongodb.org/osx/mongodb-osx-ssl-x86_64-4.0.9.tgz
-   >    # 解压mongodb
-   >    sudo tar -zxvf mongodb-osx-ssl-x86_64-4.0.9.tgz
-   >    # 创建一个db文件
-   >    sudo mkdir -p /data/db
-   >    # 进入mongodb/bin
-   >    cd /usr/local/mongodb/bin 
-   >    # 运行MongoDB
-   >    sudo ./mongod
-   >    
-   >    # 打开`127.0.0.1:27017`看是否显示`It looks like you are trying to access MongoDB over HTTP on the native driver port.`
-   >    ```
+   > ```
+   > #  进入/usr/local
+   > cd /usr/local
+   > # 安装mongodb
+   > sudo curl -O https://fastdl.mongodb.org/osx/mongodb-osx-ssl-x86_64-4.0.9.tgz
+   > # 解压mongodb
+   > sudo tar -zxvf mongodb-osx-ssl-x86_64-4.0.9.tgz
+   > # 创建一个db文件
+   > sudo mkdir -p /data/db
+   > # 进入mongodb/bin
+   > cd /usr/local/mongodb/bin 
+   > # 运行MongoDB
+   > sudo ./mongod
+   > 
+   > # 打开`127.0.0.1:27017`看是否显示`It looks like you are trying to access MongoDB over HTTP on the native driver port.`
+   > ```
    >
    > 2. 下载[代码](<https://github.com/azrrrrr/azr_scf_server>)，安装项目依赖
    >
-   >    注意：可以使用**Postman**进行接口测试，要记得设置host~ 
+   > 注意：可以使用**Postman**进行接口测试，要记得设置host~ 
 
 ## 初始化项目
 
@@ -293,4 +293,4 @@ tags:
 
 本文首次发布于 [Azr的博客](http://amor9.cn), 作者 [@azrrrrr](https://github.com/azrrrrr/) ,转载请保留原文链接.
 
-原文链接： [http://amor9.cn/2019/05/20/scf1](http://amor9.cn/2019/05/20/scf1)
+原文链接： [http://amor9.cn/2019/05/20/scf1](
