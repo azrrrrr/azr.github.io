@@ -1,0 +1,296 @@
+---
+layout:     post
+title:      十次方
+subtitle:   No
+date:      2019-05-20
+author:     Azr
+header-img: img/post-bg-universe.jpg
+catalog: true
+tags:
+    - 十次方
+---
+
+
+> No
+
+## 架构
+
+![架构](https://ww2.sinaimg.cn/large/006tNc79ly1g3b3qhk81pj30pi0dymyz.jpg)
+
+## 技术选型
+
+> * Node
+> * Express
+> * REST Api
+> * ES6  
+> * Promise/Async-await
+> * Axios
+> * Jquery
+> * Lodash
+> * Nunjucks
+
+## 接口
+
+1. 卸载
+
+2. 部署至本地 
+
+   > 1. 安装Mongodb--[Mac 版本](https://www.mongodb.com/download-center/community)
+   >
+   >    ```
+   >    #  进入/usr/local
+   >    cd /usr/local
+   >    # 安装mongodb
+   >    sudo curl -O https://fastdl.mongodb.org/osx/mongodb-osx-ssl-x86_64-4.0.9.tgz
+   >    # 解压mongodb
+   >    sudo tar -zxvf mongodb-osx-ssl-x86_64-4.0.9.tgz
+   >    # 创建一个db文件
+   >    sudo mkdir -p /data/db
+   >    # 进入mongodb/bin
+   >    cd /usr/local/mongodb/bin 
+   >    # 运行MongoDB
+   >    sudo ./mongod
+   >    
+   >    # 打开`127.0.0.1:27017`看是否显示`It looks like you are trying to access MongoDB over HTTP on the native driver port.`
+   >    ```
+   >
+   > 2. 下载[代码](<https://github.com/azrrrrr/azr_scf_server>)，安装项目依赖
+   >
+   >    注意：可以使用**Postman**进行接口测试，要记得设置host~ 
+
+## 初始化项目
+
+1. 目录结构
+
+   > ```
+   > ├── controller
+   > ├── config
+   > ├── public
+   > ├── router
+   > ├── service
+   > ├── utills
+   > ├── vendor
+   > ├── view
+   > └── app.js
+   > └── package.json
+   > ```
+
+2. app.js
+
+   ```js
+   const express = require('express')
+   
+   const app = express()
+   
+   app.get('/', (req,res,next) => {
+     res.status(200).send('hello')
+   })
+   
+   app.listen(3002,() => {
+     console.log("O(∩_∩)O~")
+     console.log('http:127.0.0.1:3002')
+   })
+   ```
+
+3. package.json
+
+   ```json
+   {
+     "name": "scf",
+     "version": "1.0.0",
+     "description": "",
+     "main": "app.js",
+     "scripts": {
+       "test": "echo \"Error: no test specified\" && exit 1",
+       "dev": "nodemon app.js"
+     },
+     "keywords": [],
+     "author": "",
+     "license": "ISC",
+     "dependencies": {
+       "express": "^4.17.0",
+       "nodemon": "^1.19.0"
+     }
+   }
+   ```
+
+## 导入[Nunjucks](<https://nunjucks.bootcss.com/getting-started.html>)
+
+1. 安装Nunjucks
+
+   1-1  下载
+
+   ```
+   $ npm run nunjucks
+   ```
+
+   1-2  使用
+
+   ```js
+   var app = express();
+   
+   nunjucks.configure('views', {
+       autoescape: true,
+       express: app
+   });
+   
+   app.get('/', function(req, res) {
+       res.render('index.html');
+   });
+   ```
+
+   1-3 更改路径
+
+   ```js
+   const express = require('express')
+   const  nunjucks = require('nunjucks')
+   const path = require('path')
+   
+   const app = express()
+   
+   // 使用path更改路径
+   nunjucks.configure(path.join(__dirname, 'view'), {
+     autoescape: true,
+     express: app,
+     // watch - 如果为 true，当文件系统上的模板变化了，系统会自动更新他。
+     watch: true
+   });
+   
+   app.get('/', (req,res,next) => {
+     // 使用模板引擎
+     res.render('index.html', {
+       foo: 'world'
+     })
+   })
+   
+   app.listen(3002,() => {
+     console.log("O(∩_∩)O~")
+     console.log('http:127.0.0.1:3002')
+   })
+   ```
+
+   1-4 在view下新建index.html
+
+   ```html
+    <p>Hello {{ foo }}</p>
+   ```
+
+   1-5 打开`localhost:3000`，就可以显示`Hello world`
+
+   注意： **Nunjucks**会自动打开缓存功能，在开发阶段使用`watch: true`
+
+2. 导入静态资源
+
+   2-1 代码拷贝至`view`，静态资源拷贝至`public`
+
+   2-2 使用**express**中间件开放静态资源
+
+   ```js
+   app.use('/public/', express.static(path.join(__dirname,'./public')))
+   ```
+
+3. 提取公共模板
+
+## 用户注册
+
+1. 划分路由模块和控制器模块
+
+   1-1 在**router**创建**index.js**
+
+   ```js
+   const express = require('express')
+   
+   const router = express.Router()
+   
+   router
+     .get('/', (req,res,next) => {
+       res.render('index.html')
+     })
+   
+     .get('/people/home', (req,res,next) => {
+       res.render('people-home.html')
+     })
+   
+   module.exports = router
+   ```
+
+   1-2 在**app.js**导入
+
+   ```js
+   const express = require('express')
+   const  nunjucks = require('nunjucks')
+   const path = require('path')
+   const router = require('./router')
+   
+   const app = express()
+   
+   app.use('/public/', express.static(path.join(__dirname,'./public')))
+   
+   nunjucks.configure(path.join(__dirname, 'view'), {
+     autoescape: true,
+     express: app,
+     watch: true
+   });
+   
+   app.use(router)
+   
+   app.listen(3000,() => {
+     console.log("O(∩_∩)O~")
+     console.log('http:127.0.0.1:3000')
+   })
+   ```
+
+   1-3 在**controller**中提取出来路径之后的方法，进行统一的管理
+
+   ```js
+   exports.showIndex = async (req, res, next) => {
+     res.render('index.html')
+   }
+   ```
+
+   1-4 在**router/index.js**中进行导入
+
+   ```JS 
+   const express = require('express')
+   
+   const indexCtrl = require('../controller/index')
+   
+   const router = express.Router()
+   
+   router
+     .get('/', indexCtrl.showIndex)
+   
+   module.exports = router
+   ```
+
+2. 客户端表单处理
+
+3. 解析获取客户端表单数据
+
+4. 请求数据接口
+
+5. 封装service接口请求模块
+
+6. 获取验证码
+
+7. 校验验证码
+
+8. 处理验证码过期
+
+9. 客户端表单验证
+
+10. 客户端表单异步验证
+
+11. 客户端表单异步验证
+
+12. 异步校验验证码补充
+
+13. 服务端数据校验
+
+14. 验证插件补充
+
+## 完
+
+本文首次发布于 [Azr的博客](http://amor9.cn), 作者 [@azrrrrr](https://github.com/azrrrrr/) ,转载请保留原文链接.
+
+原文链接： [http://amor9.cn/2019/05/20/scf1](http://amor9.cn/2019/05/20/scf1)
