@@ -6,7 +6,7 @@ header-img: img/post-bg-desk.jpg
 email: azr8023@gmail.com
 description: "Azr的博客是一个分享技术教程，共享资源，前端开发者交流的个人独立博客。"
 keyword: "Blog, Azrrrrr,Azr的博客,博客,个人博客,前端开发,前端博客,源码分享,前端课堂,前端学习,编程基础"
-url: "https://amor9.cn/"          # your host, for absolute URL
+# url: "https://amor9.cn/"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/azrrrrr/azrrrrr.github.io.git" # you code repository
 
